@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form page</title>
+</head>
+<body>
+    <h2>Fill the form and click submit</h2>>    
+<form action="/calories" method="post">
+{{user_form.weight.label}}{{user_form.weight}}
+<br>
+{{user_form.height.label}}{{user_form.height}}
+<br>
+{{user_form.age.label}}{{user_form.age}}
+<br>
+{{user_form.country.label}}{{user_form.country}}
+<br>
+{{user_form.city.label}}{{user_form.city}}
+<br>
+
+
+<br>
+{{user_form.button}}
+
+{% if result %}
+
+<br>
+You need {{calorie_amount}} Kcals today.
+<br>
+{% endif %}
+
+</form>>
+    
+</body>
+</html>
